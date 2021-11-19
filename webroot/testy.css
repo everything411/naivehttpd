@@ -1,0 +1,12 @@
+
+.head {
+ 	background: #FFFF99; padding: 50px; text-align:center; font-size:large}
+
+.main {
+	background:#000000 width: 70%; margin-right:5%; margin-left:5%; border-left:solid 1px black; padding: 200px }
+
+.side { padding:30px; background-color:#F4A460; vertical-align:top}
+
+.bottom {padding: 20px; background:#FFFF99}
+
+

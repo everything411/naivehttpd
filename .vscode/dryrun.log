@@ -1,0 +1,16 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/d/Documents/http'
+gcc -Wall -O2 -c cgi.c -o cgi.o
+ 
+gcc -Wall -O2 -c main.c -o main.o
+gcc -Wall -O2 -c visitor.c -o visitor.o
+ 
+g++ -Wall -O2 -c controller.cc -o controller.o
+ 
+g++ -Wall -O2 -c handle.cc -o handle.o
+g++ -Wall -O2 -c http_response.cc -o http_response.o
+ 
+g++ -Wall -O2 -c log.cc -o log.o
+g++ -Wall -O2  cgi.o  main.o  visitor.o  controller.o  handle.o  http_response.o  log.o -o server -s -lpthread
+make: Leaving directory '/d/Documents/http'
+ 
